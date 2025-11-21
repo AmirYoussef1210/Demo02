@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/notifAct"
+        android:title="Notif" />
+    <item
+        android:id="@+id/ChargerAct"
+        android:title="Charger" />
+    <item
+        android:id="@+id/gemini_act"
+        android:title="Gemini" />
+</menu>
