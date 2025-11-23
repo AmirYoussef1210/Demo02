@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "714742237186",
+    "project_id": "myalphasigmaproject",
+    "storage_bucket": "myalphasigmaproject.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714742237186:android:1fbb85dddaa0630cec7f1b",
+        "android_client_info": {
+          "package_name": "com.example.demo02"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm1jR4EBvIIKPFEs504GC1ecw5KKaIJI4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
