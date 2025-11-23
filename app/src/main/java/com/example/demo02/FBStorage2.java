@@ -58,7 +58,7 @@ public class FBStorage2 extends MasterClass {
         try {
             File imgFile = File.createTempFile(filename,".jpg",storageDir);
 
-            capturedImageUri = FileProvider.getUriForFile(this, "com.example.demo02", imgFile);
+            capturedImageUri = FileProvider.getUriForFile(this, "com.example.demo02.fileprovider", imgFile);
             Intent takePicIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
             takePicIntent.putExtra(MediaStore.EXTRA_OUTPUT, capturedImageUri);
 
