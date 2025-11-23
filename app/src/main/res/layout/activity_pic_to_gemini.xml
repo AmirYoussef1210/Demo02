@@ -7,34 +7,37 @@
     android:layout_height="match_parent"
     tools:context=".PicToGemini_activity">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="321dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="52dp"
-        android:text="upload a phote for gemini to describe"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iV"
         android:layout_width="225dp"
         android:layout_height="197dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginBottom="348dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="180dp"
+        android:onClick="enterPhoto"
         android:text="enter photo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/iV" />
+
+    <TextView
+        android:id="@+id/tV"
+        app_layout_constraintTop_toBottomOf="@+id/iV"
+        android:layout_width="381dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="69dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

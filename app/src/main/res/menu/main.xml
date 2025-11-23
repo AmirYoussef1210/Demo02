@@ -11,4 +11,19 @@
     <item
         android:id="@+id/gemini_act"
         android:title="Gemini" />
+    <item
+        android:id="@+id/tempAct"
+        android:title="PlusMinus" />
+    <item
+        android:id="@+id/AuthAct"
+        android:title="FBAuth" />
+    <item
+        android:id="@+id/listAct"
+        android:title="RTDBList" />
+    <item
+        android:id="@+id/StorageAct"
+        android:title="FBStorage" />
+    <item
+        android:id="@+id/FBStorage2ACt"
+        android:title="FBStorage2" />
 </menu>

@@ -62,6 +62,26 @@ public class MasterClass extends AppCompatActivity
             Intent intent = new Intent(this, PicToGemini_activity.class);
             startActivity(intent);
         }
+        else if(id == R.id.tempAct) {
+            Intent intent = new Intent(this, ChangeRTDBActivity.class);
+            startActivity(intent);
+        }
+        else if(id == R.id.AuthAct) {
+            Intent intent = new Intent(this, FBauthActivity.class);
+            startActivity(intent);
+
+        } else if (id == R.id.listAct){
+            Intent intent = new Intent(this, RTDBList.class);
+            startActivity(intent);
+        } else if (id == R.id.StorageAct) {
+            Intent intent = new Intent(this, FBStorage.class);
+            startActivity(intent);
+
+        }
+        else if(id == R.id.FBStorage2ACt){
+            Intent intent = new Intent(this, FBStorage2.class);
+            startActivity(intent);
+        }
         return super.onOptionsItemSelected(item);
     }
 }
