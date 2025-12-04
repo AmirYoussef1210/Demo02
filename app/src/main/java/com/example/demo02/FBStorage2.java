@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -70,6 +71,20 @@ public class FBStorage2 extends MasterClass {
         }
     }
 
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data_back) {
+        super.onActivityResult(requestCode, resultCode, data_back);
+        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
+            if (capturedImageUri != null) {
+                uploadImage(capturedImageUri);
+            } else {
+                Toast.makeText(FBStorage2.this, "Image URI is missing", Toast.LENGTH_LONG).show();
+            }
+        } else {
+            Toast.makeText(FBStorage2.this,"Image capture canceled or failed",Toast.LENGTH_LONG).show();
+        }
+    }
+
     public void download1(View view)
     {
         if (fileName == null || fileName.isEmpty()) {
@@ -78,7 +93,7 @@ public class FBStorage2 extends MasterClass {
         }
 
         StorageReference refFile = refST.child("images/" + fileName);
-        final long MAX_SIZE = 1024 * 1024 * 5; // 1MB
+        final long MAX_SIZE = 1024 * 1024;
         refFile.getBytes(MAX_SIZE).addOnSuccessListener(new OnSuccessListener<byte[]>() {
             @Override
             public void onSuccess(byte[] bytes) {
